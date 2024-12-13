@@ -1,4 +1,4 @@
-@media(max-width: 1400px) 
+@media(max-width: 1650px) 
 {
     .burger { 
         display: block; 
@@ -34,22 +34,24 @@
     }
     .diamond-photo {
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         border-radius: 0; 
         top: 0; 
-        right: 0; 
-        transform: rotate(0deg); 
+        left: 0;
+        bottom: 0;
         z-index: 1;
+        
     }
     .photo-content {
         width: 100%;
         height: 100%;
-        background-image: url("../img/photo.png");
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center; 
-        transform: scale(1.2) rotate(0deg); 
+        transform: scale(1.4); 
+        clip-path: none;
     }
+
     .logo { transform: scale(0.7) translateY(-25%)}
     .logo img { transform: scale(0.9); }
     .bg-title { 
@@ -63,9 +65,13 @@
     }
     h1 {color: white;}
     .primary-text {color: white;}
+    .line-bg {
+        max-width: 90vw;
+    }
+    .line-bg2{
+        max-width: 90vw;
+    }
     .line {
-        width: 100vh;
-        height: 100vh;
         transform: scale(-1.4);
         background-image: url('../img/mobileVector.svg');
         top: -100%;
@@ -74,6 +80,7 @@
     .description{
         width: 100vw;
         height: 100vh;
+        overflow:hidden
     }
     .element {
         margin-bottom: 3%;
@@ -120,14 +127,45 @@
         justify-content: center;
     }
 }
-@media(max-width: 500px) {
+@media(max-width: 700px){
     .bg-title { 
+        width: 530px;
         min-width: 80%;
         min-height: 205px;
         background-color: transparent; 
         box-shadow: none; 
         margin-top: 0%;
         padding: 0 6%;
+    }
+    .primary-text {
+        line-height: 1.2; 
+    }
+    h1 {
+        color: white;
+        font-size: 38px;
+    }
+}
+@media(max-width: 500px) {
+    .line {
+        transform: scale(1.4);
+    }
+    .line-bg2{
+        width: 100vw;
+    }
+    .line2 {
+        transform: scale(1.4);
+    }
+    .bg-title { 
+        width: 430px;
+        min-width: 80%;
+        min-height: 205px;
+        background-color: transparent; 
+        box-shadow: none; 
+        margin-top: 0%;
+        padding: 0 6%;
+    }
+    .primary-text {
+        line-height: 1.2; 
     }
     h1 {
         color: white;
@@ -145,7 +183,23 @@
         top: -100%;
         left: 5%;
     }
-
+    .container {
+        display: flex;
+        overflow-x: auto; 
+        margin-top: 50px; 
+        width: 410px;
+        scroll-behavior: smooth; 
+    }
+    .type-box {
+        width: 360px;
+    }
+    .img {
+        width: 300px;
+    }
+    .text {
+        width: 300px;
+        font-size: 14px;
+    }
 }
 @media (hover: hover) {
     .link:hover {
