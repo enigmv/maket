@@ -33,7 +33,7 @@
         padding: 0 6%;
     }
     .diamond-photo {
-        width: 100vw;
+        width: 99vw;
         height: 70vh;
         border-radius: 0; 
         top: 0; 
@@ -48,15 +48,16 @@
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center; 
-        transform: scale(1.4); 
+        transform: scale(1.5); 
+        right: -20%;
         clip-path: none;
     }
 
     .logo { transform: scale(0.7) translateY(-25%)}
     .logo img { transform: scale(0.9); }
     .bg-title { 
-        min-width: 660px;
-        height: 205px;
+        height: 100%; /* Делаем высоту автоматической, чтобы контент подходил */
+        width: 90%; 
         background-color: transparent; 
         box-shadow: none; 
         margin-top: 0%;
@@ -64,26 +65,35 @@
         overflow: hidden;
     }
     h1 {color: white;}
-    .primary-text {color: white;}
+    .primary-text {
+        color: white;
+        line-height: 1.2; 
+    }
     .line-bg {
-        max-width: 90vw;
+        width: 79vw;
     }
     .line-bg2{
-        max-width: 90vw;
+        width: 80vw;
     }
     .line {
+        width: 100%;
         transform: scale(-1.4);
         background-image: url('../img/mobileVector.svg');
         top: -100%;
         left: 5%;
     }
+    .line2 {
+        width: 100%;
+        left: 4%;
+        bottom: 100%;
+    }
     .description{
-        width: 100vw;
+        width: 99vw;
         height: 100vh;
         overflow:hidden
     }
     .element {
-        margin-bottom: 3%;
+        margin-bottom: 30px;
     }
     .description-list {
         font-size: 13px;
@@ -136,6 +146,7 @@
         box-shadow: none; 
         margin-top: 0%;
         padding: 0 6%;
+
     }
     .primary-text {
         line-height: 1.2; 
@@ -143,6 +154,9 @@
     h1 {
         color: white;
         font-size: 38px;
+    }
+    .element {
+        margin-bottom: 50px; 
     }
 }
 @media(max-width: 500px) {
@@ -156,9 +170,7 @@
         transform: scale(1.4);
     }
     .bg-title { 
-        width: 430px;
-        min-width: 80%;
-        min-height: 205px;
+        width: 400px;
         background-color: transparent; 
         box-shadow: none; 
         margin-top: 0%;
