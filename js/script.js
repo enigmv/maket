@@ -13,11 +13,6 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-// Обработка колеса мыши
-container.addEventListener('wheel', (event) => {
-    event.preventDefault();
-    container.scrollLeft += event.deltaY;
-});
 
 // Начало перетаскивания мышью
 container.addEventListener('mousedown', (e) => {
